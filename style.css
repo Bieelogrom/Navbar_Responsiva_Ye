@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Raleway", sans-serif;
+}
+
+:root{
+    --cor-principal: #13f235;
+    --cor-secundaria: #CCD3CA;
+    --cor-branca-texto: #f2e2ce
+}
+
+.fundo{
+    background: url(IMG/Fundo.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar-brand > p, .offcanva_title{
+    color: var(--cor-principal);
+    font-weight: 800;
+}
+
+.fundo::before{
+    background-color: rgba(0, 0, 0, 0.2);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.fundo .container{
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+.container > h1{
+    color: var(--cor-principal);
+}
+
+.fundo > h2{
+    font-weight: 500;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    border-bottom: var(--cor-principal) 2px solid;
+    color: var(--cor-secundaria);
+}
+
+.Botão_Login{
+    background-color: #132b40;
+    padding: 12px 20px;
+    border-radius: 12px;
+    color: var(--cor-principal);
+    text-decoration: none;
+    transition: 0.3s ease-in-out background-color;
+}
+
+.Botão_Login:hover{
+    background-color: #7b8da6;
+    border: var(--cor-branca-texto) 2px solid; 
+    /* color: var(--cor-branca-texto); */
+}
+
+.navbar-brand > p{
+    color: var(--cor-principal);
+
+}
